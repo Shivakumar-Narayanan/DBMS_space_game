@@ -1,0 +1,16 @@
+x = 0
+y = 0
+h = WINDOWHEIGHT
+x1 = 0
+y1 = -h
+
+y1 += 2
+y += 2
+
+DISPLAY.blit(background_image, (x, y))
+DISPLAY.blit(background_image, (x1, y1))
+
+if y > h:
+    y = -h
+if y1 > h:
+    y1 = -h
